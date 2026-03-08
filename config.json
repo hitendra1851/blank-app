@@ -1,0 +1,27 @@
+{
+  "_comment": "Teams Chat Export Service - Configuration",
+
+  "email": {
+    "smtp_host": "smtp.gmail.com",
+    "smtp_port": 587,
+    "use_tls": true,
+    "sender": "your_email@gmail.com",
+    "password": "your_app_password_here",
+    "recipient": "destination@example.com",
+    "subject_prefix": "[Teams Export]"
+  },
+
+  "service": {
+    "check_interval_minutes": 30,
+    "max_messages_per_email": 100,
+    "state_file": "last_export_state.json",
+    "log_file": "teams_export.log"
+  },
+
+  "teams": {
+    "custom_path": null,
+    "copy_to_temp": true,
+    "include_channel_messages": true,
+    "include_direct_messages": true
+  }
+}
